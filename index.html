@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modbook — Car Build Tracker</title>
+<style>
+  :root{ --bg:#0d0d0f; --card:#151518; --text:#ececf0; --muted:#9a9aa5; --line:#26262b; --accent:#f25c1a; }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f6f7; --card:#ffffff; --text:#16161a; --muted:#5f5f6a; --line:#e4e4e8; --accent:#f25c1a; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px}
+  main{max-width:520px; text-align:center}
+  .dot{width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#2a2a2f,#111);
+    border:1px solid var(--line); position:relative; margin:0 auto 20px}
+  .dot::after{content:""; position:absolute; left:12px; top:14px; width:22px; height:6px; border-radius:3px; background:var(--accent)}
+  h1{font-size:2rem; letter-spacing:-.02em; margin:.2em 0}
+  p{color:var(--muted); margin:.4em 0 1.6em}
+  .links{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
+  a{color:var(--text); text-decoration:none; border:1px solid var(--line); background:var(--card);
+    padding:12px 22px; border-radius:12px; font-weight:600; transition:border-color .15s}
+  a:hover{border-color:var(--accent)}
+  footer{margin-top:2.5rem; color:var(--muted); font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+  <div class="dot"></div>
+  <h1>Modbook</h1>
+  <p>A digital garage for car enthusiasts — every mod, every service, every dollar. One timeline per car.</p>
+  <div class="links">
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
+  <footer>© 2026 Yaroslav Salimov</footer>
+</main>
+</body>
+</html>

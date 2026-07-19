@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modbook — Support</title>
+<style>
+  :root{
+    --bg:#0d0d0f; --card:#151518; --text:#ececf0; --muted:#9a9aa5;
+    --line:#26262b; --accent:#f25c1a;
+  }
+  @media (prefers-color-scheme: light){
+    :root{ --bg:#f6f6f7; --card:#ffffff; --text:#16161a; --muted:#5f5f6a; --line:#e4e4e8; --accent:#f25c1a; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
+    padding:48px 20px;
+  }
+  main{max-width:680px; margin:0 auto}
+  .brand{display:flex; align-items:center; gap:12px; margin-bottom:8px}
+  .brand .dot{width:36px; height:36px; border-radius:9px; background:linear-gradient(135deg,#2a2a2f,#111);
+    border:1px solid var(--line); position:relative}
+  .brand .dot::after{content:""; position:absolute; left:8px; top:9px; width:14px; height:4px; border-radius:2px; background:var(--accent)}
+  h1{font-size:1.7rem; margin:.2em 0 .1em; letter-spacing:-.02em}
+  .lede{color:var(--muted); margin-bottom:2rem}
+  h2{font-size:1.05rem; margin:2rem 0 .5rem; letter-spacing:-.01em}
+  a{color:var(--accent); text-decoration:none}
+  a:hover{text-decoration:underline}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:14px; padding:20px 22px; margin:1.5rem 0}
+  .contact{font-size:1.1rem}
+  details{border:1px solid var(--line); border-radius:12px; padding:2px 16px; margin:.6rem 0; background:var(--card)}
+  summary{cursor:pointer; padding:14px 0; font-weight:600; list-style:none}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"+"; color:var(--accent); font-weight:700; margin-right:10px}
+  details[open] summary::before{content:"–"}
+  details p{margin:0 0 14px; color:var(--muted)}
+  footer{margin-top:3rem; padding-top:1.5rem; border-top:1px solid var(--line); color:var(--muted); font-size:.85rem}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand"><span class="dot"></span><strong>Modbook</strong></div>
+  <h1>Support</h1>
+  <p class="lede">Every mod, every service, every dollar — one timeline per car.</p>
+
+  <div class="card contact">
+    Need a hand? Email <a href="mailto:htcsalimyaro@gmail.com">htcsalimyaro@gmail.com</a> and you'll get a reply, usually within a couple of days.
+  </div>
+
+  <h2>Frequently asked</h2>
+
+  <details>
+    <summary>How do I sync my garage across devices?</summary>
+    <p>Sign in to iCloud on each device and make sure iCloud is enabled for Modbook. Your cars, mods, service records, and photos sync automatically through your private iCloud account — no separate login needed.</p>
+  </details>
+
+  <details>
+    <summary>Is my data private?</summary>
+    <p>Yes. Everything stays on your device and in your own iCloud. Modbook has no analytics or trackers, and the developer cannot see your data. See our <a href="privacy.html">Privacy Policy</a>.</p>
+  </details>
+
+  <details>
+    <summary>Does Modbook work for electric cars?</summary>
+    <p>Yes. Set your car's powertrain to electric and Modbook adapts — battery and charging service tracking, and no oil-change reminders. Petrol, diesel, hybrid, and plug-in hybrid are all supported too.</p>
+  </details>
+
+  <details>
+    <summary>What are dyno and Dragy runs?</summary>
+    <p>Modbook logs both dyno pulls (power, torque, boost) and Dragy-style acceleration times (0–100, 100–200, quarter mile). Each run remembers which mods were installed when it was measured.</p>
+  </details>
+
+  <details>
+    <summary>I deleted something by accident. Can I get it back?</summary>
+    <p>Modbook never hard-deletes — removed items are kept as hidden records rather than erased. If you need to recover something, email support and we'll help.</p>
+  </details>
+
+  <footer>© 2026 Yaroslav Salimov · Modbook · <a href="privacy.html">Privacy Policy</a></footer>
+</main>
+</body>
+</html>
