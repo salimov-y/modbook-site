@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Modbook — Car Build Tracker</title>
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
 <style>
   :root{ --bg:#0d0d0f; --card:#151518; --text:#ececf0; --muted:#9a9aa5; --line:#26262b; --accent:#f25c1a; }
   @media (prefers-color-scheme: light){
@@ -14,9 +16,8 @@
     font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,sans-serif;
     min-height:100vh; display:flex; align-items:center; justify-content:center; padding:24px}
   main{max-width:520px; text-align:center}
-  .dot{width:56px; height:56px; border-radius:14px; background:linear-gradient(135deg,#2a2a2f,#111);
-    border:1px solid var(--line); position:relative; margin:0 auto 20px}
-  .dot::after{content:""; position:absolute; left:12px; top:14px; width:22px; height:6px; border-radius:3px; background:var(--accent)}
+  /* The app's own icon, rounded as on the home screen. */
+  .icon{display:block; width:88px; height:88px; border-radius:20px; border:1px solid var(--line); margin:0 auto 20px}
   h1{font-size:2rem; letter-spacing:-.02em; margin:.2em 0}
   p{color:var(--muted); margin:.4em 0 1.6em}
   .links{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
@@ -43,7 +44,7 @@
 </head>
 <body>
 <main>
-  <div class="dot"></div>
+  <img class="icon" src="modbook-icon.png" alt="" width="88" height="88">
   <h1>Modbook</h1>
   <p>A digital garage for car enthusiasts — every mod, every service, every dollar. One timeline per car.</p>
   <div class="stores">
